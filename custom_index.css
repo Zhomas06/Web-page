@@ -84,3 +84,16 @@ body {
   display: flex;
   align-items: center;
 }
+
+.sumary {
+  display: flex;
+  flex-direction: row;
+  padding: 0% 15%;
+}
+.sumary div{
+  padding: 3% 5%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  
+}

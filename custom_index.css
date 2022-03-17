@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+  height: 100%;
+  background-color: rgb(200, 200, 233);
+}
+#cabezera {
+  position: fixed;
+
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(200, 200, 200);
+}
+
+#marco {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    30deg,
+    crimson,
+    sienna,
+    royalblue,
+    indianred,
+    purple
+  );
+}
+#foto_perfil {
+  height: 95vh;
+}
+#foto_perfil img {
+  height: 95vh;
+  flex: 1;
+}
+
+#font_name {
+  padding: 10vh;
+  font-weight: bold;
+  color: azure;
+  flex: 1;
+  font-size: 10vh;
+}
+
+#profesion {
+  font-weight: bold;
+  color: azure;
+  flex: 1;
+  font-size: 5vh;
+}
+
+.little_tittle {
+  display: flex;
+  padding: 0% 30%;
+  flex-direction: column;
+}
+.little_tittle div {
+  height: 0.13vh;
+
+  width: 100%;
+  background-color: black;
+}
+
+#about_me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0vw 30vw;
+}
+#about_me div {
+  padding: 3% 3%;
+  flex: 1;
+}
+#foto_formal img {
+  width: 100%;
+
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+#foto_formal {
+  display: flex;
+  align-items: center;
+}

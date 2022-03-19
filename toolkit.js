@@ -1,16 +1,8 @@
-/* Always with the  */
+/* Always with the well known debugers... The console.logs */
 console.log("The Utils are being charged")
 let Hoy = new Date().getFullYear()
 document.getElementById("my_age").innerText= Hoy-1998
-/* Idea
-I want to do a script that read a Json an create one div for each entry. contains the information of each caree, work etc..
-Steps... 
-Create a template json. [Done]
-Read a json with the js. [Done]
-Check the inner that creates HTML. [Done]
-See the results [Done]
-Apply the css 
-*/
+/* Creating the objects to show the experience and study*/
 let list_doc = ["Work_E.json","Study.json"]
 for (let i = 0; i < list_doc.length; i++) {
 
@@ -40,23 +32,22 @@ for (let i = 0; i < list_doc.length; i++) {
                 
                 let element = document.getElementById(list_doc[i].split(".")[0])
                 let div = document.createElement('div');
+                let div_aux = document.createElement('div');
 
                 Text_Replicator(div,'h1', response_2[o]["Name Company"])
-                Text_Replicator(div,'h2', response_2[o]["Name Detailed"])
-                Text_Replicator(div,'p', response_2[o]["Description"])
-                Text_Replicator(div,'p', response_2[o]["Start Day"] +" - "+ response_2[o]["End Dat"])
-  
+                Text_Replicator(div_aux,'h2', response_2[o]["Name Detailed"])
+                Text_Replicator(div_aux,'p', response_2[o]["Description"])
+                Text_Replicator(div_aux,'p', response_2[o]["Start Day"] +" - "+ response_2[o]["End Dat"])
+                div.appendChild(div_aux);
                 /**Adding all to the initial document */
                 element.appendChild(div);
             }
             }
     );      
 }
-
 let list_doc_stars = ["Skills.json","Languaje.json"]
 
-//<p>Print icon: <span class="glyphicon glyphicon-star-empty"></span></p>
-//<p>Print icon: <span class="glyphicon glyphicon-star"></span></p>
+//Creating the Stars menu to define the 
 for (let i = 0; i < list_doc.length; i++) {
 
     fetch('/Data/Json/'+list_doc_stars[i]).then(response => {return response.json()}).then(
@@ -112,14 +103,26 @@ for (let i = 0; i < list_doc.length; i++) {
                     Text_Replicator_Stars(div_2,'li', response_2[o]["Name"],response_2[o]["Level"]);
                 }
                 
-
-
                 /**Adding all to the initial document */
               element.appendChild(div_1);
               element.appendChild(div_2);
             }
-
-
-
         }
     )};
+
+//Auto save
+
+function Copynator() {
+    
+    navigator.clipboard.writeText("tomasnavasgutierrez@gmail.com");
+    var mesage = document.getElementById("copy_mesage");
+    mesage.classList="non_mesagge";
+  }
+
+  const mail = document.getElementById("mail");
+  mail.addEventListener("click", Copynator)
+
+  
+  
+
+  

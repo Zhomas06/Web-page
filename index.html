@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
@@ -11,9 +20,28 @@
     <link rel="stylesheet" href="custom_index.css" />
     <title>Tomás Navas CV</title>
   </head>
-  <header><div id="cabezera">Navigator</div></header>
+  <header>
+    <div id="cabezera">
+      <div id="linkedin">
+        <i class="fa fa-linkedin-square">
+          <a
+            href="https://www.linkedin.com/in/tom%C3%A1s-navas-guti%C3%A9rrez-813012179/"
+            >Tomás Navas Gutiérrez</a
+          >
+        </i>
+      </div>
+      <div id="mail">
+        <i class="material-icons">mail</i>
+        <div>tomasnavasgutierrez@gmail.com</div>
+        <span class="mesagge" id="copy_mesage">Copied to clipboard</span>
+      </div>
+
+      <div id="loader">Test</div>
+    </div>
+  </header>
 
   <body>
+    
     <div id="marco">
       <div id="foto_perfil"><img src="Data/Image_Perfil.jpg" /></div>
 
@@ -28,13 +56,12 @@
 
     <div class="little_tittle">
       <h1>Profile</h1>
-      <div></div>
     </div>
 
     <div id="about_me">
       <div>
         <h1>About Me</h1>
-        <p>
+        <p id="presentation">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus
           fuga inventore possimus. At, velit? Incidunt magnam quod aspernatur
           quam veritatis commodi id libero. Iste, magni? Blanditiis quas tenetur
@@ -55,28 +82,28 @@
 
     <div class="little_tittle">
       <h1>Work Experience</h1>
-      <div></div>
     </div>
     <div class="sumary" id="Work_E"></div>
 
     <div class="little_tittle">
       <h1>Education</h1>
-      <div></div>
     </div>
 
     <div class="sumary" id="Study"></div>
 
     <div class="little_tittle">
       <h1>Skills</h1>
-      <div></div>
     </div>
     <div class="sumary_stars" id="Skills"></div>
 
     <div class="little_tittle">
       <h1>Languajes</h1>
-      <div></div>
     </div>
     <div class="sumary_stars" id="Languaje"></div>
+  
+    <div id = "The_end">"Everything that has a beginning comes to an end"<br /> -- Marcus Fabius Quintilianus --</div>
+
   </body>
+
   <script src="toolkit.js"></script>
 </html>

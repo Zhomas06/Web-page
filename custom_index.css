@@ -87,13 +87,22 @@ body {
 
 .sumary {
   display: flex;
+  align-content: center;
   flex-direction: row;
+
   padding: 0% 15%;
 }
-.sumary div{
+.sumary div {
   padding: 3% 5%;
   display: flex;
   flex: 1;
   flex-direction: column;
-  
+  margin: 0.1vw;
+  border-radius: 10%;
+  border: 0.1rem;
+  border-color: black;
+
+}
+.glyphicon.glyphicon-star{
+  color:green;
 }

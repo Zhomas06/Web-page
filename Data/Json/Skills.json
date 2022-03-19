@@ -1,0 +1,54 @@
+﻿[
+        {
+            "Name": "C++",
+            "Level": "4"
+        },
+        {
+            "Name": "Python",
+            "Level": "5"
+        },
+        {
+            "Name": "SQL",
+            "Level": "4"
+        },
+        {
+            "Name": "Matlab",
+            "Level": "4"
+        },
+        {
+            "Name": "Processing",
+            "Level": "4"
+        },
+        {
+            "Name": "Java",
+            "Level": "2"
+        },
+        {
+            "Name": "HTML ",
+            "Level": "3"
+        },
+        {
+            "Name": "JavaScript",
+            "Level": "3"
+        },
+        {
+            "Name": "Assembly",
+            "Level": "1"
+        },
+        {
+            "Name": "CSS",
+            "Level": "3"
+        },
+        {
+            "Name": "Json",
+            "Level": "4"
+        },
+        {
+            "Name": "Deep Learning",
+            "Level": "4"
+        },
+        {
+            "Name": "Dart (Within Flutter)",
+            "Level": "3"
+        }
+    ]

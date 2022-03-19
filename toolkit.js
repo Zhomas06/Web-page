@@ -17,14 +17,19 @@ for (let i = 0; i < list_doc.length; i++) {
     fetch('/Data/Json/'+list_doc[i]).then(response => {return response.json()}).then(
 
         response_2 => {
+
+
+
+
+
+
             for (let o = 0; o < response_2.length; o++) {
                 console.log(response_2[o])
                 let element = document.getElementById(list_doc[i].split(".")[0])
                 let div = document.createElement('div');
                 let h1 = document.createElement('h1');
-                console.log("hey")
-                console.log(response_2[o])
-                h1.appendChild(document.createTextNode(response_2[o]["Name Company"]));
+                h1.innerText = response_2[o]["Name Company"];
+                
                 let h2 = document.createElement('h2');
                 h2.appendChild(document.createTextNode(response_2[o]["Name Detailed"]));
                 let description = document.createElement('p');

@@ -45,7 +45,7 @@ for (let i = 0; i < list_doc.length; i++) {
             }
     );      
 }
-let list_doc_stars = ["Skills.json","Languaje.json"]
+let list_doc_stars = ["Skills.json","Language.json"]
 
 //Creating the Stars menu to define the 
 for (let i = 0; i < list_doc.length; i++) {
@@ -72,7 +72,7 @@ for (let i = 0; i < list_doc.length; i++) {
                     
                     for (let stars = 1; stars < 6; stars++) {
                         if (stars <= mark){
-                            console.log(stars)
+                            
                             const star = document.createElement("span");
                             star.classList = "glyphicon glyphicon-star"
                             div_aux.appendChild(star)

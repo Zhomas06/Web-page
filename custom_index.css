@@ -231,6 +231,7 @@ header div div div {
 .label {
   background-color: black;
   display: flex;
+  flex:1;
   height: 30px;
   border-radius: 50px;
   width: 100px;
@@ -242,6 +243,13 @@ header div div div {
   cursor: pointer;
   border: 2px solid black;
 }
+
+.container{
+  align-items:flex-end;
+  justify-content: end;
+  flex: 1;
+}
+
 .label .fa-moon {
   color: rgb(250, 250, 250);
 }

@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+      integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0="
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -36,12 +45,20 @@
         <span class="mesagge" id="copy_mesage">Copied to clipboard</span>
       </div>
 
-      <div id="loader">Test</div>
+      <div  class="container night-mode-available">
+        <div id="change_ligth" class="night-mode-button">
+          <input type="checkbox" class="checkbox" id="night-mode">
+          <label for="night-mode" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="blob"></div>
+
+          </label>
+        </div>
     </div>
   </header>
 
   <body>
-    
     <div id="marco">
       <div id="foto_perfil"><img src="Data/Image_Perfil.jpg" /></div>
 
@@ -62,10 +79,11 @@
       <div>
         <h1>About Me</h1>
         <p id="presentation">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus
-          fuga inventore possimus. At, velit? Incidunt magnam quod aspernatur
-          quam veritatis commodi id libero. Iste, magni? Blanditiis quas tenetur
-          quibusdam?
+          Oh, hi, <br /><br />
+          A surprise, to be sure, but a welcome one.<br /><br />
+          Let me tell you a little bit about myself. I am a Project Manager and
+          I manage projects until they are successful. I am also enthusiastic
+          about programming, for me the language of the present and the future.
         </p>
       </div>
       <div id="foto_formal"><img src="Data/Imagen_Formal.jpg" /></div>
@@ -100,9 +118,11 @@
       <h1>Languajes</h1>
     </div>
     <div class="sumary_stars" id="Languaje"></div>
-  
-    <div id = "The_end">"Everything that has a beginning comes to an end"<br /> -- Marcus Fabius Quintilianus --</div>
 
+    <div id="The_end">
+      "Everything that has a beginning comes to an end"<br />
+      -- Marcus Fabius Quintilianus --
+    </div>
   </body>
 
   <script src="toolkit.js"></script>

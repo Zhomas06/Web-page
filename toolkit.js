@@ -122,7 +122,26 @@ function Copynator() {
   const mail = document.getElementById("mail");
   mail.addEventListener("click", Copynator)
 
-  
-  
+let dia =true;
+const r = document.querySelector('body');
+
+document.querySelector('.checkbox').addEventListener('change',()=>{
+    
+    if (dia){
+        dia= !dia
+        r.style.setProperty('--color_1', '#26292B');
+        r.style.setProperty('--color_2', '#DBC05F');
+        r.style.setProperty('--color_3', '#2E3239');
+        r.style.setProperty('--color_4', '#A2B2EE');
+    }
+    else{
+        dia= !dia
+        r.style.setProperty('--color_1', '#2e4159');
+        r.style.setProperty('--color_2', '#d1d1d4');
+        r.style.setProperty('--color_3', '#e4e4e4');
+        r.style.setProperty('--color_4', '#eeeeee');
+    }
+
+  });
 
   
